@@ -1,0 +1,212 @@
+/* Global Dark Theme */
+html,
+body,
+[class*="css"],
+.stApp {
+  font-family: "Segoe UI", "Source Sans Pro", system-ui, sans-serif !important;
+  background-color: #0b0f19 !important;
+  color: #f3f4f6 !important;
+}
+
+/* Sidebar Container */
+[data-testid="stSidebar"] {
+  background-color: #05070c !important;
+  border-right: 1px solid #111827 !important;
+  min-width: 260px !important;
+}
+
+/* Hide Streamlit chrome */
+#MainMenu {
+  visibility: hidden;
+}
+footer {
+  visibility: hidden;
+}
+header[data-testid="stHeader"] {
+  background: transparent !important;
+}
+
+/* Main layout */
+div.block-container {
+  padding-top: 2rem !important;
+  padding-bottom: 3rem !important;
+  max-width: 900px !important;
+}
+
+/* Top Warning Banner */
+.top-warning-banner {
+  background-color: rgba(29, 78, 216, 0.1) !important;
+  border: 1px solid #1d4ed8 !important;
+  border-radius: 0.375rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  color: #93c5fd !important;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* Stepper */
+.sidebar-brand {
+  padding: 1.5rem 0.5rem 1rem 0.5rem;
+}
+.sidebar-brand h2 {
+  font-size: 1.45rem !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  margin: 0 !important;
+}
+.sidebar-brand p {
+  font-size: 0.85rem !important;
+  color: #9ca3af !important;
+  margin: 0.2rem 0 0 0 !important;
+}
+
+.stepper-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+.step-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem 0.85rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+.step-item.active {
+  background-color: #1d4ed8 !important;
+  border-color: #3b82f6 !important;
+}
+.step-item.done {
+  background-color: rgba(29, 78, 216, 0.1) !important;
+  border-color: rgba(59, 130, 246, 0.2) !important;
+}
+.step-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #9ca3af;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+.step-item.active .step-circle {
+  background-color: #ffffff !important;
+  color: #1d4ed8 !important;
+}
+.step-item.done .step-circle {
+  background-color: #3b82f6 !important;
+  color: #ffffff !important;
+}
+.step-label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #9ca3af;
+}
+.step-item.active .step-label {
+  color: #ffffff !important;
+}
+.step-item.done .step-label {
+  color: #3b82f6 !important;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding-top: 2rem;
+  font-size: 0.78rem;
+  color: #6b7280;
+  line-height: 1.3;
+}
+
+/* Content */
+.screen-title {
+  font-size: 1.75rem !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  margin-top: 1rem !important;
+  margin-bottom: 0.5rem !important;
+}
+.screen-subtitle {
+  font-size: 0.95rem !important;
+  color: #9ca3af !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* Textarea */
+div[data-baseweb="textarea"] {
+  background-color: #111827 !important;
+  border: 1px solid #374151 !important;
+  border-radius: 0.5rem !important;
+}
+div[data-baseweb="textarea"] textarea {
+  color: #f3f4f6 !important;
+  background-color: transparent !important;
+  font-size: 1rem !important;
+}
+
+/* Question card */
+.question-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 4px solid #3b82f6;
+  border-radius: 0 8px 8px 0;
+  padding: 1.25rem;
+  margin: 1rem 0;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: #f3f4f6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+button[data-testid="baseButton-primary"] {
+  background-color: #1d4ed8 !important;
+  border-color: #1d4ed8 !important;
+  color: #ffffff !important;
+  border-radius: 0.375rem !important;
+  font-weight: 600 !important;
+  padding: 0.5rem 1.5rem !important;
+}
+button[data-testid="baseButton-primary"]:hover {
+  background-color: #2563eb !important;
+}
+button[data-testid="baseButton-secondary"] {
+  background-color: #1f2937 !important;
+  border: 1px solid #374151 !important;
+  color: #d1d5db !important;
+  border-radius: 9999px !important;
+  padding: 0.25rem 1rem !important;
+  font-size: 0.85rem !important;
+  transition: all 0.2s ease !important;
+}
+button[data-testid="baseButton-secondary"]:hover {
+  background-color: #374151 !important;
+  border-color: #4b5563 !important;
+  color: #ffffff !important;
+}
+
+/* Containers */
+div[data-testid="stVerticalBlockBorderWrapper"] {
+  background-color: rgba(255, 255, 255, 0.02) !important;
+  border: 1px solid #1f2937 !important;
+  border-radius: 0.5rem !important;
+  padding: 1.25rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Metrics */
+div[data-testid="stMetricValue"] {
+  color: #3b82f6 !important;
+  font-weight: 700 !important;
+}
+div[data-testid="stMetricLabel"] {
+  color: #9ca3af !important;
+  font-size: 0.85rem !important;
+}

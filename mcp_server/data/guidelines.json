@@ -1,0 +1,42 @@
+{
+  "respiratory": {
+    "guidance": [
+      "Surveiller la température et la fréquence respiratoire",
+      "Maintenir une bonne hydratation",
+      "Éviter l'effort intense en cas de toux ou d'essoufflement"
+    ],
+    "red_flags": [
+      "Essoufflement au repos",
+      "Douleur thoracique",
+      "Lèvres bleutées",
+      "Fièvre élevée persistante (>39°C)"
+    ]
+  },
+  "cardiac": {
+    "guidance": [
+      "Repos immédiat en cas de symptômes thoraciques",
+      "Ne pas retarder une évaluation médicale si douleur persistante"
+    ],
+    "red_flags": [
+      "Douleur thoracique constrictive",
+      "Syncope",
+      "Palpitations avec malaise"
+    ]
+  },
+  "general": {
+    "guidance": [
+      "Repos adapté",
+      "Hydratation",
+      "Surveillance des symptômes pendant 48h"
+    ],
+    "red_flags": [
+      "Aggravation rapide",
+      "Confusion",
+      "Déshydratation sévère"
+    ]
+  },
+  "default": {
+    "guidance": ["Consulter en cas de doute ou d'aggravation"],
+    "red_flags": ["Tout signe inhabituel ou sévère"]
+  }
+}
